@@ -8,7 +8,7 @@
 	<div class="container">
 	<?php include 'header.php'?>
 	
-		<form method="POST" action="user_registration.php">
+		<form method="POST" action="index.php">
 			<table  border="0" align="center">
 				<tr>	
 					<th colspan="6"><h1>Student's Registration Form</h1></th>
