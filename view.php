@@ -6,7 +6,8 @@
 	<div class="container">
 	<?php include 'header.php'?>
 		<center><font color='red' size='6'><?php echo @$_GET['delete'];?>
-		<?php echo @$_GET['updated']; ?><?php echo @$_GET['logged']; ?></font></center>
+		<?php /*echo @$_GET['updated']; ?><?php echo @$_GET['logged']; */?>
+			</font></center>
 		<a href="logout.php">Logout</a>
 		<br></br><table align="center" width='900' border='4'>
 			<tr>
@@ -47,10 +48,7 @@
 				<td><?php echo $user_name; ?></td>
 				<td><?php echo $father_name; ?></td>
 				<td><?php echo $roll_no; ?></td>
-				<td><a href ='delete.php?del=<?php echo $u_id; ?>'>Delete</a></td>
-				<td><a href='edit.php?edit=<?php echo $u_id ?>'>Edit</a></td>
-				<td><a href='view.php?detail=<?php echo $u_id ?>'>Detail</a></td>
-			</tr>
+					</tr>
 			<?php } ?>
 		</table>
 		<?php include 'footer.php'?>
