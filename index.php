@@ -90,7 +90,7 @@ if($student_roll=='')
 	exit();
  }
 
-$que="insert into u_reg (user_name,father_name,school_name,roll_no,class)values('$student_name','$student_father','$student_school','$student_roll','$student_class');";
+$que="insert into u_reg (username,fname,rollno)values('$student_name','$student_father','$student_roll')";
 
 //if($conn->query($que)=== true)
 //{
