@@ -1,7 +1,7 @@
 <?php
-		$serverName = "finalprserver.database.windows.net";
+		$serverName = "studentserv.database.windows.net";
 $connectionOptions = array(
-    "Database" => "finalprdbb",
+    "Database" => "studentsdb",
     "Uid" => "ravdeep",
     "PWD" => "Like@1234"
 );
