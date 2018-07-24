@@ -90,7 +90,11 @@ if($student_roll=='')
 	exit();
  }
 
-$que="insert into u_reg (username,fname,rollno)values('$student_name','$student_father','$student_roll')";
+	 
+	 $tsql="insert into u_reg (username,fname,rollno)values('$student_name','$student_father','$student_roll')";
+$getResults= sqlsrv_query($conn, $tsql);
+	 
+
 
 //if($conn->query($que)=== true)
 //{
