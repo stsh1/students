@@ -28,7 +28,7 @@
 			<?php
 			
 				include('config.php');
-				$tsql="SELECT * FROM dbo.u_reg";
+				$tsql="SELECT * FROM u_reg";
 				$getResults= sqlsrv_query($conn, $tsql);
 				
 	
