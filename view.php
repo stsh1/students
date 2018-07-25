@@ -9,18 +9,19 @@ $connectionOptions = array(
 );
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
-$tsql="SELECT * FROM dbo.u_reg";
+$sqlselect="SELECT * FROM u_reg";
 
-$getResults= sqlsrv_query($conn, $tsql);
+$getResults= sqlsrv_query($conn, $sqlselect);
 
 echo ("Reading data from table" . PHP_EOL);
 if ($getResults == FALSE)
     echo (sqlsrv_errors());
+
 while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) 
 {
- echo ($row['id'] . " " . $row['username']. $row['fname'] . $row['rollno']. PHP_EOL);
+ echo $row['username'];
 }
-sqlsrv_free_stmt($getResults);
+
 ?>
 
 
