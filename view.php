@@ -50,6 +50,10 @@
 				<td><?php echo $user_name; ?></td>
 				<td><?php echo $father_name; ?></td>
 				<td><?php echo $roll_no; ?></td>
+				<td><a href ='delete.php?del=<?php echo $u_id; ?>'>Delete</a></td>
+				<td><a href='edit.php?edit=<?php echo $u_id ?>'>Edit</a></td>
+				<td><a href='view.php?detail=<?php echo $u_id ?>'>Detail</a></td>
+				
 					</tr>
 			<?php } ?>
 		</table>
