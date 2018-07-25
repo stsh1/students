@@ -17,5 +17,5 @@
 					echo $user_name;
 					echo $father_name;
 					echo $roll_no;
-				
+				}
 			?>
