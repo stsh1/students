@@ -2,7 +2,7 @@
 			
 <?php
 include('config.php');
-$sqlselect="SELECT * FROM u_reg";
+$sqlselect="SELECT * FROM dbo.u_reg";
 
 $getResults= sqlsrv_query($conn, $sqlselect);
 
