@@ -19,7 +19,7 @@ if ($getResults == FALSE)
 
 while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) 
 {
- echo $row['username'];
+ echo $row[0];
 }
 
 ?>
