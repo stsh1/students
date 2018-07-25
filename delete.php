@@ -3,7 +3,7 @@ include('config.php');
 
 $delete_record = $_GET['del'];
 
-$query ="delete from u_reg where u_id='$delete_record'";
+$query ="delete from u_reg where rollno='$delete_record'";
 
 if (mysql_query($query)){
 
