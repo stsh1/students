@@ -12,12 +12,20 @@ if ($getResults == FALSE)
 
 while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) 
 {
- echo $row[0];
-	 echo $row[1];
-	 echo $row[2];
-	 echo $row[3];
+ echo ($row['id'] . " " . $row['username'] . PHP_EOL);
 }
 
+/*
+$conn = sqlsrv_connect($serverName, $connectionOptions);
+$tsql="SELECT * FROM dbo.users";
+$getResults= sqlsrv_query($conn, $tsql);
+echo ("Reading data from table" . PHP_EOL);
+if ($getResults == FALSE)
+    echo (sqlsrv_errors());
+while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
+ echo ($row['id'] . " " . $row['name'] . PHP_EOL);
+}
+sqlsrv_free_stmt($getResults);*/
 ?>
 
 
