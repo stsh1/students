@@ -66,27 +66,27 @@ include('config.php');
  
  if($student_name=='')
  {
-	echo "<script>window.open('user_registration.php?name=name is required','_self');</script>";
+	echo "<script>window.open('index.php?name=name is required','_self');</script>";
 	exit();
  }
  if($student_father=='')
  {
-	echo "<script>window.open('user_registration.php?father=father's name is required','_self');</script>";
+	echo "<script>window.open('index.php?father=father's name is required','_self');</script>";
 	exit();
  }
 if($student_school=='')
  {
-	echo "<script>window.open('user_registration.php?school= school name is required','_self');</script>";
+	echo "<script>window.open('index.php?school= school name is required','_self');</script>";
 	exit();
  }
 if($student_roll=='')
  {
-	echo "<script>window.open('user_registration.php?roll=roll no. is required','_self');</script>";
+	echo "<script>window.open('index.php?roll=roll no. is required','_self');</script>";
 	exit();
  }
  if($student_class=='null')
  {
-	echo "<script>window.open('user_registration.php?class=class is required','_self');</script>";
+	echo "<script>window.open('index.php?class=class is required','_self');</script>";
 	exit();
  }
 
