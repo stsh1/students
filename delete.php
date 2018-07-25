@@ -3,7 +3,7 @@ include('config.php');
 
 $delete_record = $_GET['del'];
 
-$query ="delete from dbo.u_reg where rollno='$delete_record'";
+$query ="DELETE FROM dbo.u_reg WHERE rollno='$delete_record'";
 
 if (mysqlsrv_query($query)){
 
