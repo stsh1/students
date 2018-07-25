@@ -1,6 +1,4 @@
 <?php
-			
-<?php
 include('config.php');
 $sqlselect="SELECT * FROM dbo.u_reg";
 
@@ -14,7 +12,7 @@ while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 {
  echo ($row['id'] . " " . $row['username'] . PHP_EOL);
 }
-
+?>
 /*
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 $tsql="SELECT * FROM dbo.users";
@@ -26,7 +24,7 @@ while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
  echo ($row['id'] . " " . $row['name'] . PHP_EOL);
 }
 sqlsrv_free_stmt($getResults);*/
-?>
+
 
 
 
