@@ -17,9 +17,12 @@ echo ("Reading data from table" . PHP_EOL);
 if ($getResults == FALSE)
     echo (sqlsrv_errors());
 
-while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) 
+while ($row = sqlsrv_fetch_assoc($getResults, SQLSRV_FETCH_ASSOC)) 
 {
- echo $row[1];
+ echo $row['fname'];
+	 echo $row['id'];
+	 echo $row['username'];
+	 echo $row['rollno'];
 }
 
 ?>
