@@ -2,19 +2,18 @@
 	include('config.php');
 	
 	$edit_record=$_GET['edit'];
-	$query="SELECT * FROM dbo.u_reg WHERE rollno='$edit_record' ";
-	$getResults= sqlsrv_query($conn, $query);
+	$query1="SELECT * FROM dbo.u_reg WHERE rollno='$edit_record'";
+	$getResults= sqlsrv_query($conn,$query1);
 
 
 	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 	{
 		$edit_id=$row['u_id'];
-		$s_name=$row[1];
-		$s_father=$row[2];
-		$s_school=$row[3];
+		$s_name=$row['username'];
+		$s_father=$row['fname'];
+		$s_school=$row['rollno'];
 		$s_roll=$row[4];
 		$s_class=$row[5];
-		echo "$s_name";
 	}
 ?>
 
