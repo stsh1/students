@@ -7,7 +7,6 @@ $query ="DELETE FROM dbo.u_reg WHERE rollno='$delete_record'";
 
 $getResult=sqlsrv_query($conn, $query);
 
-echo $getResult;
 
 //if($getResult===true ){
 if($conn->query($que)=== true){
