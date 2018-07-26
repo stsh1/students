@@ -44,8 +44,10 @@
 
 <?php
 
-	$con=mysql_connect("localhost","root","");
-	$db=mysql_select_db('students',$con);
+	/*$con=mysql_connect("localhost","root","");
+	$db=mysql_select_db('students',$con);*/
+	
+	include('config.php');
 		if(isset($_POST['login'])){
 			$admin_name=$_SESSION['admin_name']=$_POST['admin_name'];
 			$admin_pass=$_POST['admin_pass'];
