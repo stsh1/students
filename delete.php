@@ -8,8 +8,8 @@ $query ="DELETE FROM dbo.u_reg WHERE rollno='$delete_record'";
 $getResult=sqlsrv_query($conn, $query);
 
 echo "<script>";
-        echo "window.location.href='view.php'
-	window.alert('Data Deleted');
+        echo "window.alert('Data Deleted')
+	window.location.href='view.php';
 </script>";
 /*
 //if($getResult===true ){
