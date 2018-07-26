@@ -29,7 +29,7 @@ session_start();
 					<td><input type="password" name="admin_pass"><font color="red"><?php echo @$_GET['pass']?></font></td>
 				</tr >
 				<tr>
-					<td align="center" colspan="8"><input type="submit" value="Login" name="login"></td>
+					<td align="center" colspan="8"><input type="submit" value="Sign Up" name="signup"></td>
 				</tr>
 				
 			</table>
