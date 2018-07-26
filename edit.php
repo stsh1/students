@@ -76,8 +76,8 @@
 		$student_roll=$_POST['roll_no1'];
 		$student_class=$_POST['class_name1'];
 		
-		$query2="UPDATE dbo.u_reg SET username='$student_name',fname='$student_father',rollno='$student_school' where rollno='$edit_record1'";
-		
+		$query2="UPDATE dbo.u_reg SET username='$student_name',fname='$student_father',rollno='$student_school' WHERE rollno='$edit_record1'";
+		//Update dbo.u_reg set username='anjana',fname='vishkarma',rollno='1111'where rollno='123456';
 		$getResult1=sqlsrv_query($conn, $query2);
 		
 		echo "<script>";
