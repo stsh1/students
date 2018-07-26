@@ -2,6 +2,7 @@
 	include('config.php');
 	
 	$edit_record=$_GET['edit'];
+echo "$edit_record";
 	$query="SELECT * FROM dbo.u_reg WHERE rollno='$edit_record' ";
 	$getResults= sqlsrv_query($conn, $query);
 
