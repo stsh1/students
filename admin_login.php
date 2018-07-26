@@ -28,7 +28,7 @@
 					<td align="center" colspan="8"><input type="submit" value="Login" name="login"></td>
 			
 				</tr>
-				<tr><td><a href="#">SING UP</a></td></tr>
+				<tr><td><a href="sign_up.php">SING UP</a></td></tr>
 				
 			</table>
 		
