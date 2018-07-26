@@ -11,30 +11,31 @@ session_start();
 	<div class="container">
 	<?php include 'header.php'?>
 	
-		<form method="POST" action="admin_login.php">
-			<table border="0" align="center">
-				<tr>	
-					<th colspan="6"><h1>Sign Up Form</h1></th>
-				</tr>
-				<tr >
-					<td align="right"><label>User Name:</label></td>
-					<td><input type="text" name="admin_name"><font color="red"><?php echo @$_GET['user']?></font></td>
-				</tr>
-				<tr >
-					<td align="right"><label>Email:</label></td>
-					<td><input type="text" name="email_name"><font color="red"><?php echo @$_GET['email']?></font></td>
-				</tr>
-				<tr >
-					<td align="right"><label>Password:</label></td>
-					<td><input type="password" name="admin_pass"><font color="red"><?php echo @$_GET['pass']?></font></td>
-				</tr >
-				<tr>
-					<td align="center" colspan="8"><input type="submit" value="Sign Up" name="signup"></td>
-				</tr>
-				
-			</table>
-			
-		</form>
+		<form method="post" action="register.php">
+  	<?php include('errors.php'); ?>
+  	<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" name="username" value="<?php echo $username; ?>">
+  	</div>
+  	<div class="input-group">
+  	  <label>Email</label>
+  	  <input type="email" name="email" value="<?php echo $email; ?>">
+  	</div>
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" name="password_1">
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" name="password_2">
+  	</div>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user">Register</button>
+  	</div>
+  	<p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>
+  </form>
 		<center><?php echo @$_GET['error'] ?></center>
 		<?php include 'footer.php'  ?>
 		<div>
