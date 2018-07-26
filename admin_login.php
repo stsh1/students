@@ -25,11 +25,13 @@
 					<td><input type="password" name="admin_pass"><font color="red"><?php echo @$_GET['pass']?></font></td>
 				</tr >
 				<tr>
-					<td align="center" colspan="8"><input type="submit" value="Login" name="login"></td></br>
-			<a href="#">SING UP</a>
+					<td align="center" colspan="8"><input type="submit" value="Login" name="login"></td>
+			
 				</tr>
+				<tr><td><a href="#">SING UP</a></td></tr>
 				
 			</table>
+		
 			
 		</form>
 		<center><?php echo @$_GET['error'] ?></center>
