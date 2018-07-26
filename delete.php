@@ -11,7 +11,11 @@ $getResult=sqlsrv_query($conn, $query);
 //if($getResult===true ){
 if($conn->query($que)=== true){
 
-	echo "<script>window.open('view.php?delete=Record Has been Deleted Successfully!','_self')<script>";
+	echo "<script>";
+         echo " alert('Data deleted.');      
+        window.location.href='view.php';
+</script>";
+	//echo "<script>window.open('view.php?delete=Record Has been Deleted Successfully!','_self')<script>";
 }
 //}
 
