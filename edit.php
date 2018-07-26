@@ -66,7 +66,7 @@
 	</body>
 </html>
 <?php
-	/*if(isset($_POST['update'])){
+	if(isset($_POST['update'])){
 	
 		$edit_record1 = $_GET['edit_form'];
 		
@@ -76,10 +76,18 @@
 		$student_roll=$_POST['roll_no1'];
 		$student_class=$_POST['class_name1'];
 		
-		$query1="update u_reg set user_name='$student_name',father_name='$student_father',school_name='$student_school',roll_no='$student_roll',class='$student_class' where u_id='$edit_record1'";
-		if(mysql_query($query1))
+		$query2="update u_reg set user_name='$student_name',father_name='$student_father',school_name='$student_school',roll_no='$student_roll',class='$student_class' where u_id='$edit_record1'";
+		
+		$getResult1=sqlsrv_query($conn, $query2);
+		
+		echo "<script>";
+        	echo "window.alert('Data Updated')
+		window.location.href='view.php';
+		</script>";
+		
+		/*if(mysql_query($query1))
 		{
 			echo "<script>window.open('view.php?updated=Record has been updated..!','_self')</script>";
-		}
-	}*/
+		}*/
+	}
 ?>
