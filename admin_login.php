@@ -25,7 +25,8 @@ session_start();
 					<td><input type="password" name="admin_pass"><font color="red"><?php echo @$_GET['pass']?></font></td>
 				</tr >
 				<tr>
-					<td align="center" colspan="8"><input type="submit" value="Login" name="login"></td>
+					<td align="center" colspan="8"><input type="submit" value="Login" name="login"></td></br>
+			<a href="#">SING UP</a>
 				</tr>
 				
 			</table>
