@@ -3,9 +3,10 @@
 	
 	$edit_record=$_GET['edit'];
 	$query="select * from u_reg where u_id ='$edit_record' ";
-	
-	$run=sqlsrv_query($conn, $query);
-	while($row=sqlsrv_fetch_array($run))
+	$getResults= sqlsrv_query($conn, $query);
+
+
+	while($row=sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
 	{
 		$edit_id=$row['u_id'];
 		$s_name=$row[1];
