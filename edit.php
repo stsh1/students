@@ -2,7 +2,6 @@
 	include('config.php');
 	
 	$edit_record=$_GET['edit'];
-echo "$edit_record";
 	$query="SELECT * FROM dbo.u_reg WHERE rollno='$edit_record' ";
 	$getResults= sqlsrv_query($conn, $query);
 
@@ -15,6 +14,7 @@ echo "$edit_record";
 		$s_school=$row[3];
 		$s_roll=$row[4];
 		$s_class=$row[5];
+		echo "$s_name";
 	}
 ?>
 
@@ -67,7 +67,7 @@ echo "$edit_record";
 	</body>
 </html>
 <?php
-	if(isset($_POST['update'])){
+	/*if(isset($_POST['update'])){
 	
 		$edit_record1 = $_GET['edit_form'];
 		
@@ -82,5 +82,5 @@ echo "$edit_record";
 		{
 			echo "<script>window.open('view.php?updated=Record has been updated..!','_self')</script>";
 		}
-	}
+	}*/
 ?>
